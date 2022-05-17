@@ -11,19 +11,25 @@ import {
 } from "react-native";
 import { styles } from "./styles/homeStyles";
 import { Feather } from "@expo/vector-icons";
+import React, { useState } from "react";
 
 var endPointURL = "$100,000";
 // <Feather name="menu" size={20} color="black" />
-export default function Home() {
+
+function Home() {
+  var lck = styles.black;
+
   return (
     <SafeAreaView style={styles.view}>
       <Feather style={styles.menu} name="menu" size={24} color="black" />
       <View style={styles.container}>
-        <Text>Hi, Thomas</Text>
-        <Text style={styles.title}>{endPointURL}</Text>
+        <TouchableOpacity>
+          <Text style={styles.black}>Hi, Thomas</Text>
+          <Text style={[styles.title, lck]}>{endPointURL}</Text>
+        </TouchableOpacity>
 
         <View style={styles.rowContainer}>
-          <TouchableOpacity onPress={() => alert("d, world!")}>
+          <TouchableOpacity onPress={() => (lck = styles.orange)}>
             <View style={styles.button}>
               <Text style={styles.buttontext}>Request</Text>
             </View>
@@ -43,3 +49,5 @@ export default function Home() {
     </SafeAreaView>
   );
 }
+
+export default Home;

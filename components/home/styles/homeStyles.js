@@ -30,6 +30,17 @@ const styles = StyleSheet.create({
     fontSize: 36,
     color: "#000",
     fontWeight: "bold",
+    width: "100%",
+  },
+  black: {
+    marginBottom: 7,
+    minWidth: "40%",
+    backgroundColor: "black",
+  },
+  orange: {
+    marginBottom: 7,
+    minWidth: "40%",
+    backgroundColor: "orange",
   },
   button: {
     padding: 10,
