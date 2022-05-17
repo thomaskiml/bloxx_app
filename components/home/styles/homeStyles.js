@@ -3,14 +3,25 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   view: {
     flex: 1,
-    backgroundColor: "#aaa",
+    backgroundColor: "#f9f9f9",
+  },
+  menu: {
+    padding: 20,
+  },
+  downArrow: {
+    padding: 20,
+    alignItems: "center",
   },
   container: {
     flex: 1,
-    backgroundColor: "#aaa",
     alignItems: "left",
     justifyContent: "center",
     margin: 20,
+    height: "100%",
+  },
+  tinyLogo: {
+    width: 25,
+    height: 25,
   },
   rowContainer: {
     flexDirection: "row",
